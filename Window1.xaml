@@ -1,0 +1,26 @@
+﻿<Window x:Class="QLPB.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:QLPB"
+        mc:Ignorable="d"
+        Title="Window1" Height="450" Width="800">
+    <Grid>
+        <DataGrid x:Name="dgwd2" AutoGenerateColumns="False" HorizontalContentAlignment="Center" Height="150" Width="600">
+            <DataGrid.Resources>
+                <Style TargetType="DataGridColumnHeader">
+                    <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                </Style>
+            </DataGrid.Resources>
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Ma CTV" Width="100" Binding="{Binding MaCtv}"/>
+                <DataGridTextColumn Header="Ho Ten" Width="100" Binding="{Binding HoTen}"/>
+                <DataGridTextColumn Header="So bai viet" Width="100" Binding="{Binding SoBv}"/>
+                <DataGridTextColumn Header="Ma Phong" Width="100" Binding="{Binding MaPhong}"/>
+                <DataGridTextColumn Header="Ten phong" Width="100" Binding="{Binding TenPhong}"/>
+                <DataGridTextColumn Header="Tien nhuan but" Width="100" Binding="{Binding tien}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Window>
